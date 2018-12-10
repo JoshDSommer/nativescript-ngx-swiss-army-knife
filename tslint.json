@@ -5,6 +5,7 @@
   },
   "rulesDirectory": ["node_modules/codelyzer"],
   "rules": {
+    "no-empty": false,
     "array-type": [true, "generic"],
     "arrow-return-shorthand": true,
     "arrow-parens": false,
