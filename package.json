@@ -13,7 +13,7 @@
   "repository": "<fill-your-repository-here>",
   "scripts": {
     "lint": "tslint \"src/**/*.ts\"",
-    "build": "ng-packagr -p lib/package.json && cp README.md dist && cp LICENSE dist",
+    "build": "npm run lint && ng-packagr -p lib/package.json && cp README.md dist && cp LICENSE dist",
     "ios": "tns run ios --syncAllFiles",
     "android": "tns run android --syncAllFiles"
   },
