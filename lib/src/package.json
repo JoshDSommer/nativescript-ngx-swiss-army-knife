@@ -1,0 +1,19 @@
+{
+  "name": "nativescript-ngx-swis-army-knife",
+  "version": "1.0.0-alpha.0",
+  "repository": "https://github.com/TheOriginalJosh/nativescript-ngx-swis-army-knife.git",
+  "author": "Josh Sommer <joshdsommer@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "peerDependencies": {
+    "@angular/core": ">=7.0.0",
+    "@angular/common": ">=7.0.0"
+  },
+  "ngPackage": {
+    "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+    "lib": {
+      "entryFile": "src/public_api.ts"
+    },
+    "dest": "../dist"
+  }
+}
