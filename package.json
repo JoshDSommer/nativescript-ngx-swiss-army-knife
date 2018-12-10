@@ -13,7 +13,7 @@
   "repository": "<fill-your-repository-here>",
   "scripts": {
     "lint": "tslint \"src/**/*.ts\"",
-    "build": "ng-packagr -p lib/package.json && cp README.md dist && cp LICENSE dist",
+    "build": "npm run lint && ng-packagr -p lib/package.json && cp README.md dist && cp LICENSE dist",
     "ios": "tns run ios --syncAllFiles",
     "android": "tns run android --syncAllFiles"
   },
@@ -28,9 +28,9 @@
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "~7.0.0",
     "nativescript-angular": "~7.0.0",
+    "nativescript-ngx-swiss-army-knife": "file:lib",
     "nativescript-theme-core": "~1.0.4",
     "nativescript-ui-sidedrawer": "~5.0.0",
-    "nativescript-ngx-swiss-army-knife": "file:./lib/",
     "ng-packagr": "^4.4.5",
     "rxjs": "~6.3.0",
     "tns-core-modules": "~5.0.2",
